@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+
+version = '0.0.4'
+
+android {
+  compileSdkVersion 23
+  buildToolsVersion '23.0.2'
+  defaultConfig {
+    minSdkVersion 9
+    targetSdkVersion 23
+    versionName version
+  }
+  buildTypes {
+    release {
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+repositories {
+  flatDir {
+    dirs 'libs'
+  }
+}
+
+dependencies {
+  compile name: 'jl1.0'
+  compile name: 'mp3spi1.9.4'
+  compile name: 'tritonus_share'
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+artifacts {
+  archives sourcesJar
+}
+
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Minim-Android.iml" filepath="$PROJECT_DIR$/Minim-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/minimandroid/minimandroid.iml" filepath="$PROJECT_DIR$/minimandroid/minimandroid.iml" />
+    </modules>
+  </component>
+</project>
